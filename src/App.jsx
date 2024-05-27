@@ -1,15 +1,22 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-// import Home from './components/Home'
+import { 
+  Route, createBrowserRouter, createRoutesFromElements, RouterProvider
+} from 'react-router-dom'
+import Homepage from './pages/Homepage'
 // import Results from './components/Results'
 
 function App() {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route index element={<Homepage />} />
+      </Route>
+    )
+  )
+
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
