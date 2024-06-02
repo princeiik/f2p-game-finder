@@ -8,24 +8,10 @@ function Form() {
 
 
     return (
+      <>
         <form>
+          <div className="sm:col-span-3">
             <div className="sm:col-span-3">
-              <label htmlFor="title" className="block text-sm font-medium leading-6 text-gray-900">
-                Title
-              </label>
-              <div className="mt-2">
-                <select
-                  id="title"
-                  name="title"
-                  autoComplete="title-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                </select>
-              </div>
-              <div className="sm:col-span-3">
               <label htmlFor="genre" className="block text-sm font-medium leading-6 text-gray-900">
                 Genre
               </label>
@@ -36,9 +22,19 @@ function Form() {
                   autoComplete="genre-name"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                 >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
+                  <option>MMORPG</option>
+                  <option>Shooter</option>
+                  <option>Strategy</option>
+                  <option>Moba</option>
+                  <option>Battle Royal</option>
+                  <option>Card</option>
+                  <option>Racing</option>
+                  <option>Sports</option>
+                  <option>Social</option>
+                  <option>Fighting</option>
+                  <option>Sci-fi</option>
+                  <option>Social</option>
+                  <option>Fighting</option>
                 </select>
               </div>
             </div>
@@ -53,30 +49,17 @@ function Form() {
                   autoComplete="platform-name"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                 >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
+                  <option>PC</option>
+                  <option>Browser</option>
                 </select>
               </div>
             </div>
-            </div>
+          </div>
         </form>
-        // <div>
-        //     <form action="">
-        //         <div>
-        //             <label>Title:</label>
-        //         </div>
-        //         <div>
-        //             <label>Genre:</label>
-        //         </div>
-        //         <div>
-        //             <label>Platform:</label>
-        //         </div>
-        //         <div>
-        //             <button>Search</button>
-        //         </div>
-        //     </form>
-        // </div>
+        <button className='mt-3 py-1 px-3 bg-indigo-300 rounded font-semibold hover:bg-sky-700'>
+            Submit
+        </button>
+      </>
   )
 }
 
