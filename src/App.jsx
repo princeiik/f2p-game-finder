@@ -3,7 +3,7 @@ import {
   Route, createBrowserRouter, createRoutesFromElements, RouterProvider
 } from 'react-router-dom'
 import Homepage from './pages/Homepage'
-// import Results from './components/Results'
+import Results from './pages/Results'
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
     createRoutesFromElements(
       <Route>
         <Route index element={<Homepage />} />
+        <Route path='/results' element={<Results />} />
       </Route>
     )
   )
