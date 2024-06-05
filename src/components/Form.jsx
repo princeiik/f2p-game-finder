@@ -1,15 +1,22 @@
-import React from 'react'
-// import { useState } from 'react'
+import React, { useState } from 'react'
+import Button from './Button'
+import { useNavigate } from 'react-router-dom'
 
 function Form() {
-    // const [title, setTitle] = useState('')
-    // const [genre, setGenre] = useState('')
-    // const [platform, setPlatform] = useState('')
+    const [genre, setGenre] = useState('')
+    const [platform, setPlatform] = useState('')
+    const navigate = useNavigate()
 
+    function handleSumbit(e) {
+      
+      e.preventDefault();
+      
+      return navigate('/results')
+    }
 
     return (
       <>
-        <form>
+        <form onSubmit={handleSumbit}>
           <div className="sm:col-span-3">
             <div className="sm:col-span-3">
               <label htmlFor="genre" className="block text-sm font-medium leading-6 text-gray-900">
@@ -55,10 +62,10 @@ function Form() {
               </div>
             </div>
           </div>
+          <button type='submit'>
+            <Button />
+          </button>
         </form>
-        <button className='mt-3 py-1 px-3 bg-indigo-300 rounded font-semibold hover:bg-sky-700'>
-            Submit
-        </button>
       </>
   )
 }
