@@ -36,11 +36,19 @@ function GameList() {
   return (
     <div>
       <h1>Game Results</h1>
-      <ul>
-        {games.map((game) => (
-          <li key={game.id}>{game.title}</li>
-        ))}
-      </ul>
+      {games.length > 0 ? (
+        <ul>
+          {games.map((game) => (
+            <li key={game.id}>
+              <h2>{game.title}</h2>
+              {/* <p>{game.short_description}</p>
+              <img src={game.thumbnail} alt={game.title} /> */}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No games found.</p>
+      )}
     </div>
   )
 }
