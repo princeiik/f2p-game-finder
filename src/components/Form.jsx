@@ -16,7 +16,7 @@ function Form() {
 
     return (
       <>
-        <div className='flex justify-center items-center max-h-full'>
+        <div className='flex justify-center items-center max-h-full mr-2'>
           <form className='w-full flex flex-col space-y-2 w-full max-w-sm p-4' onSubmit={handleSumbit}>
             <div className="sm:col-span-3">
               <div className="sm:col-span-3">

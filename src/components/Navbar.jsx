@@ -2,10 +2,10 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <header className="bg-gray-800">
+    <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/40">
       <nav className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <div className="text-white font-bold text-xl">
+          <div className="text-white font-bold text-xl drop-shadow-lg">
             <a href="#">Free 2 Play Game Finder</a>
           </div>
           <div className="hidden md:block">
