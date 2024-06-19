@@ -6,7 +6,7 @@ function Results() {
   return (
     <div>
         <Navbar />
-        <h1>RESULTS PLACEHOLDER</h1>
+        <h1 className='flex flex-row justify-center pt-6'>RESULTS PLACEHOLDER</h1>
         <GameList />
     </div>
   )

@@ -6,11 +6,11 @@ function Navbar() {
       <nav className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <div className="text-white font-bold text-xl drop-shadow-lg">
-            <a href="#">Free 2 Play Game Finder</a>
+            <a href="/">Free 2 Play Game Finder</a>
           </div>
           <div className="hidden md:block">
             <ul className="flex items-center space-x-8">
-              <li><a href="#" className="text-white">Home</a></li>
+              <li><a href="/" className="text-white">Home</a></li>
               {/* <li><a href="#" className="text-white">About</a></li>
               <li><a href="#" className="text-white">Services</a></li>
               <li><a href="#" className="text-white">Contact</a></li> */}
