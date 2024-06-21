@@ -69,7 +69,9 @@ function Form() {
               </div>
             </div>
             <div className='pt-2 flex justify-center'>
-              <Button />
+              <Button>
+                Search
+              </Button>
             </div>
           </form>
         </div>
