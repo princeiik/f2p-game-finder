@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import Button from './Button'
 // import axios from 'axios'
 
 function GameList() {
