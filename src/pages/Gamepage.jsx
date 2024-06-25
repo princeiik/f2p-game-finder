@@ -1,9 +1,25 @@
 import React from 'react'
+import { useLoaderData } from 'react-router-dom'
 
 function Gamepage() {
-  return (
-    <h1 className='flex flex-row justify-center pt-6'>GAMEPAGE PLACEHOLDER</h1>
-  )
+    const game = useLoaderData()            
+    
+    return (
+        <div>
+            <h1>{game.title}</h1>
+            <img src={game.thumbnail} alt={`Image of ${game.title}`} />
+            <p>{game.short_description}</p>
+            <p>{game.developer}</p>
+            {/* Add more game details here */}
+        </div>
+    )
 }
 
-export default Gamepage
+async function gameLoader( {params }) {
+    const { id } = params
+    const res = await fetch(`api/game?id=${id}`)
+    const data = await res.json()
+    return data
+}
+
+export { Gamepage as default, gameLoader }
