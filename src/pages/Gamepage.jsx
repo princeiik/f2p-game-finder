@@ -1,11 +1,13 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 function Gamepage() {
     const game = useLoaderData()            
     
     return (
         <div>
+            <Navbar />
             <h1>{game.title}</h1>
             <img src={game.thumbnail} alt={`Image of ${game.title}`} />
             <p>{game.short_description}</p>
