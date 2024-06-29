@@ -1,7 +1,6 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-import Carousel from '../components/Carousel'
 
 function Gamepage() {
     const game = useLoaderData()            
@@ -54,11 +53,6 @@ function Gamepage() {
                     </div>
                 </div>
             </div>
-            {/* <h1>{game.title}</h1>
-            <img src={game.thumbnail} alt={`Image of ${game.title}`} />
-            <p>{game.short_description}</p>
-            <p>{game.developer}</p> */}
-            {/* Add more game details here */}
         </div>
     )
 }
