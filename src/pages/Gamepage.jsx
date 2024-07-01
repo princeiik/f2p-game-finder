@@ -31,7 +31,10 @@ function Gamepage() {
                         </div>  
                     </div>
                     <div className='bg-yellow-500'>
-                        <p>{game.description}</p>
+                        <div className='p-4 text-lg'>
+                            <p>{game.description}</p>
+                        </div>
+                        
                     </div>
                     {/* Image 2 */}
                     <div className='col-span-2 bg-green-500'>
