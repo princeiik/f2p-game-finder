@@ -45,19 +45,30 @@ function Gamepage() {
                         <img className='p-4' src={game.screenshots[2].image} alt="" />
                     </div>
                     <div className='bg-purple-500'>
-                        Minimum System Requirements:
-                        <ul>
-                            <li>{game.minimum_system_requirements.os}</li>
-                            <li>{game.minimum_system_requirements.processor}</li>
-                            <li>{game.minimum_system_requirements.memory}</li>
-                            <li>{game.minimum_system_requirements.graphics}</li>
-                            <li>{game.minimum_system_requirements.storage}</li>
-                        </ul>
-                        <p>Want to learn more about {game.title}?</p>
-                        <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                        >
-                            <a href={game.game_url}>Click Here</a>
-                        </button>
+                        <div className='p-4'>
+                            <h2 className='text-center text-2xl font-semibold'>
+                                Minimum System Requirements:
+                            </h2>
+                            <div className='pt-10'>
+                                <ul className='text-lg'>
+                                    <li className='pt-4'>OS: {game.minimum_system_requirements.os}</li>
+                                    <li className='pt-4'>Processor: {game.minimum_system_requirements.processor}</li>
+                                    <li className='pt-4'>RAM: {game.minimum_system_requirements.memory}</li>
+                                    <li className='pt-4'>Graphics Card: {game.minimum_system_requirements.graphics}</li>
+                                    <li className='pt-4'>Storage: {game.minimum_system_requirements.storage}</li>
+                                </ul>
+                            </div>
+                            <div className='pt-12 text-center'>
+                                <p className='text-2xl'>Want to learn more about {game.title}?</p>
+                                <div className='pt-10'>
+                                    <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-lg font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                    >
+                                    <a href={game.game_url}>Click Here</a>
+                                    </button>
+                                </div>
+                                
+                            </div>   
+                        </div>
                     </div>
                 </div>
             </div>
