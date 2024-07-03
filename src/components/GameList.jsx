@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import Button from './Button'
-// import axios from 'axios'
 
 function GameList() {
   const location = useLocation()
@@ -26,9 +25,6 @@ function GameList() {
       } catch (err) {
         console.log("Error fetching data", err);
       }
-
-      // const { data } = await axios.get(url)
-      // setGames(data)
     }
 
     fetchGames()
