@@ -46,17 +46,38 @@ function Gamepage() {
                     </div>
                     <div className='bg-purple-500'>
                         <div className='p-4'>
-                            <h2 className='text-center text-2xl font-semibold'>
+                            {game.minimum_system_requirements && (
+                                <h2 className='text-center text-2xl font-semibold'>
                                 Minimum System Requirements:
                             </h2>
+                            )}
                             <div className='pt-10'>
-                                <ul className='text-lg'>
+                                {/* <ul className='text-lg'>
                                     <li className='pt-4'>OS: {game.minimum_system_requirements.os}</li>
                                     <li className='pt-4'>Processor: {game.minimum_system_requirements.processor}</li>
                                     <li className='pt-4'>RAM: {game.minimum_system_requirements.memory}</li>
                                     <li className='pt-4'>Graphics Card: {game.minimum_system_requirements.graphics}</li>
                                     <li className='pt-4'>Storage: {game.minimum_system_requirements.storage}</li>
-                                </ul>
+                                </ul> */}
+                                {game.minimum_system_requirements && (
+                                    <ul className='text-lg'>
+                                        {game.minimum_system_requirements.os && (
+                                            <li className='pt-4'>OS: {game.minimum_system_requirements.os}</li>
+                                        )}
+                                        {game.minimum_system_requirements.processor && (
+                                            <li className='pt-4'>Processor: {game.minimum_system_requirements.processor}</li>
+                                        )}
+                                        {game.minimum_system_requirements.memory && (
+                                            <li className='pt-4'>RAM: {game.minimum_system_requirements.memory}</li>
+                                        )}
+                                        {game.minimum_system_requirements.graphics && (
+                                            <li className='pt-4'>Graphics Card: {game.minimum_system_requirements.graphics}</li>
+                                        )}
+                                        {game.minimum_system_requirements.storage && (
+                                            <li className='pt-4'>Storage: {game.minimum_system_requirements.storage}</li>
+                                        )}
+                                    </ul>
+                                )}
                             </div>
                             <div className='pt-12 text-center'>
                                 <p className='text-2xl'>Want to learn more about {game.title}?</p>
