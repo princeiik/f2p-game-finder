@@ -49,16 +49,9 @@ function Gamepage() {
                             {game.minimum_system_requirements && (
                                 <h2 className='text-center text-2xl font-semibold'>
                                 Minimum System Requirements:
-                            </h2>
+                                </h2>
                             )}
                             <div className='pt-10'>
-                                {/* <ul className='text-lg'>
-                                    <li className='pt-4'>OS: {game.minimum_system_requirements.os}</li>
-                                    <li className='pt-4'>Processor: {game.minimum_system_requirements.processor}</li>
-                                    <li className='pt-4'>RAM: {game.minimum_system_requirements.memory}</li>
-                                    <li className='pt-4'>Graphics Card: {game.minimum_system_requirements.graphics}</li>
-                                    <li className='pt-4'>Storage: {game.minimum_system_requirements.storage}</li>
-                                </ul> */}
                                 {game.minimum_system_requirements && (
                                     <ul className='text-lg'>
                                         {game.minimum_system_requirements.os && (
