@@ -5,10 +5,10 @@ import Navbar from '../components/Navbar'
 function Homepage() {
   return (
     <>
-      <div className='h-screen bg-violet-950'>
+      <div className='h-dvh bg-violet-950'>
         <Navbar />
-        <div className='flex justify-center pt-6'>
-          <h1 className="text-3xl font-bold text-white shadow-white underline"> Search Free-to-Play Games </h1>
+        <div className='text-center pt-6'>
+          <h1 className="text-3xl font-bold text-slate-100 shadow-white underline"> Search Free-to-Play Games </h1>
         </div>  
         <Form />
       </div>

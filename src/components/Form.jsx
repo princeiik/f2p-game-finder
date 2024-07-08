@@ -20,7 +20,7 @@ function Form() {
           <form className='w-full flex flex-col space-y-2 w-full max-w-sm p-4' onSubmit={handleSumbit}>
             <div className="sm:col-span-3">
               <div className="sm:col-span-3">
-                <label htmlFor="genre" className="block text-sm text-center font-medium leading-6 text-gray-900">
+                <label htmlFor="genre" className="block text-sm text-center font-medium leading-6 text-slate-100">
                   Genre
                 </label>
                 <div className="flex justify-center mt-2">
@@ -49,7 +49,7 @@ function Form() {
                 </div>
               </div>
               <div className="sm:col-span-3">
-                <label htmlFor="platform" className="block text-sm text-center font-medium leading-6 text-gray-900 mt-2">
+                <label htmlFor="platform" className="block text-sm text-center font-medium leading-6 text-slate-100 mt-2">
                   Platform
                 </label>
                 <div className="flex justify-center mt-2">
