@@ -37,7 +37,7 @@ function GameList() {
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-y-12 pt-8'>
           {games.map((game) => (
             <li key={game.id}>
-              <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div className="relative flex w-80 flex-col rounded-xl bg-violet-50 bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                   <img src={game.thumbnail} alt={`Image of ${game.title}`} />
                 </div>
