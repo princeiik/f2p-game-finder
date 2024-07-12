@@ -12,10 +12,10 @@ function Gamepage() {
             <div className='px-4 py-4'>
                 <div className='grid grid-cols-3 grid-rows-3'>
                     {/* Image 1 */}
-                    <div className='col-span-2 bg-red-500'>
+                    <div className='col-span-2'>
                         <img className='p-4' src={game.screenshots[0].image} alt="" />
                     </div>
-                    <div className='p-4 bg-orange-500'>
+                    <div className='p-4 bg-indigo-500 rounded-r-lg'>
                         <div className='text-2xl font-semibold italic text-center '>
                             <p>"{game.short_description}"</p>
                         </div>
@@ -30,21 +30,21 @@ function Gamepage() {
                             </ul>
                         </div>  
                     </div>
-                    <div className='bg-yellow-500'>
+                    <div className='bg-purple-500 rounded-l-lg'>
                         <div className='p-4 text-lg'>
                             <p>{game.description}</p>
                         </div>
                         
                     </div>
                     {/* Image 2 */}
-                    <div className='col-span-2 bg-green-500'>
+                    <div className='col-span-2'>
                         <img className='p-4' src={game.screenshots[1].image} alt="" />
                     </div>
                     {/* Image 3 */}
-                    <div className='col-span-2 bg-blue-500'>
+                    <div className='col-span-2'>
                         <img className='p-4' src={game.screenshots[2].image} alt="" />
                     </div>
-                    <div className='bg-purple-500'>
+                    <div className='bg-pink-500 rounded-r-lg'>
                         <div className='p-4'>
                             {game.minimum_system_requirements && (
                                 <h2 className='text-center text-2xl font-semibold'>
