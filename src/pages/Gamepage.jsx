@@ -6,7 +6,7 @@ function Gamepage() {
     const game = useLoaderData()            
     
     return (
-        <div>
+        <div className='max-h-full text-slate-100 bg-indigo-950'>
             <Navbar />
             <h1 className='text-center text-5xl font-semibold pt-6'>{game.title}</h1>
             <div className='px-4 py-4'>
@@ -21,12 +21,12 @@ function Gamepage() {
                         </div>
                         <div className='pl-4 pt-10'>
                             <ul className='text-lg'>
-                                <li className='pb-4'>Status: {game.status}</li>
-                                <li className='pb-4'>Genre: {game.genre}</li>
-                                <li className='pb-4'>Platform: {game.platform}</li>
-                                <li className='pb-4'>Publisher: {game.publisher}</li>
-                                <li className='pb-4'>Developer: {game.developer}</li>
-                                <li className='pb-4'>Release Date: {game.release_date}</li>
+                                <li className='pb-4'><span className='font-medium'>Status: </span>{game.status}</li>
+                                <li className='pb-4'><span className='font-medium'>Genre: </span>{game.genre}</li>
+                                <li className='pb-4'><span className='font-medium'>Platform: </span>{game.platform}</li>
+                                <li className='pb-4'><span className='font-medium'>Publisher: </span>{game.publisher}</li>
+                                <li className='pb-4'><span className='font-medium'>Developer: </span>{game.developer}</li>
+                                <li className='pb-4'><span className='font-medium'>Release Date: </span>{game.release_date}</li>
                             </ul>
                         </div>  
                     </div>
