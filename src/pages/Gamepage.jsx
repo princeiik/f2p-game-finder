@@ -10,31 +10,34 @@ function Gamepage() {
             <Navbar />
             <h1 className='text-center text-5xl font-semibold pt-6'>{game.title}</h1>
             <div className='px-4 py-4'>
-                <div className='grid grid-cols-3 grid-rows-3'>
+                <div className='grid grid-cols-3 grid-rows'>
                     {/* Image 1 */}
                     <div className='col-span-2'>
                         <img className='p-4' src={game.screenshots[0].image} alt="" />
                     </div>
-                    <div className='p-4 bg-indigo-500 rounded-r-lg'>
-                        <div className='text-2xl font-semibold italic text-center '>
-                            <p>"{game.short_description}"</p>
-                        </div>
-                        <div className='pl-4 pt-10'>
-                            <ul className='text-lg'>
-                                <li className='pb-4'><span className='font-medium'>Status: </span>{game.status}</li>
-                                <li className='pb-4'><span className='font-medium'>Genre: </span>{game.genre}</li>
-                                <li className='pb-4'><span className='font-medium'>Platform: </span>{game.platform}</li>
-                                <li className='pb-4'><span className='font-medium'>Publisher: </span>{game.publisher}</li>
-                                <li className='pb-4'><span className='font-medium'>Developer: </span>{game.developer}</li>
-                                <li className='pb-4'><span className='font-medium'>Release Date: </span>{game.release_date}</li>
-                            </ul>
+                    <div className='p-4'>
+                        <div className='h-full p-4 bg-indigo-700 rounded-r-lg'>
+                            <div className='text-2xl font-semibold italic text-center '>
+                                <p>"{game.short_description}"</p>
+                            </div>
+                            <div className='pl-4 pt-10'>
+                                <ul className='text-lg font-medium space-y-10'>
+                                    <li>Status: <span className='font-normal'>{game.status}</span></li>
+                                    <li>Genre: <span className='font-normal'>{game.genre}</span></li>
+                                    <li>Platform: <span className='font-normal'>{game.platform}</span></li>
+                                    <li>Publisher: <span className='font-normal'>{game.publisher}</span></li>
+                                    <li>Developer: <span className='font-normal'>{game.developer}</span></li>
+                                    <li>Release Date: <span className='font-normal'>{game.release_date}</span></li>
+                                </ul>
+                            </div>  
                         </div>  
                     </div>
-                    <div className='bg-purple-500 rounded-l-lg'>
-                        <div className='p-4 text-lg'>
-                            <p>{game.description}</p>
-                        </div>
-                        
+                    <div className='p-4'>
+                        <div className='bg-purple-700 rounded-l-lg'>
+                            <div className='p-4 text-lg'>
+                                <p>{game.description}</p>
+                            </div>
+                        </div>  
                     </div>
                     {/* Image 2 */}
                     <div className='col-span-2'>
@@ -44,44 +47,46 @@ function Gamepage() {
                     <div className='col-span-2'>
                         <img className='p-4' src={game.screenshots[2].image} alt="" />
                     </div>
-                    <div className='bg-pink-500 rounded-r-lg'>
-                        <div className='p-4'>
-                            {game.minimum_system_requirements && (
-                                <h2 className='text-center text-2xl font-semibold'>
-                                Minimum System Requirements:
-                                </h2>
-                            )}
-                            <div className='pt-10'>
+                    <div className='p-4'>
+                        <div className=' h-full bg-pink-700 rounded-r-lg'>
+                            <div className='p-4'>
                                 {game.minimum_system_requirements && (
-                                    <ul className='text-lg'>
-                                        {game.minimum_system_requirements.os && (
-                                            <li className='pt-4'>OS: {game.minimum_system_requirements.os}</li>
-                                        )}
-                                        {game.minimum_system_requirements.processor && (
-                                            <li className='pt-4'>Processor: {game.minimum_system_requirements.processor}</li>
-                                        )}
-                                        {game.minimum_system_requirements.memory && (
-                                            <li className='pt-4'>RAM: {game.minimum_system_requirements.memory}</li>
-                                        )}
-                                        {game.minimum_system_requirements.graphics && (
-                                            <li className='pt-4'>Graphics Card: {game.minimum_system_requirements.graphics}</li>
-                                        )}
-                                        {game.minimum_system_requirements.storage && (
-                                            <li className='pt-4'>Storage: {game.minimum_system_requirements.storage}</li>
-                                        )}
-                                    </ul>
+                                    <h2 className='text-center text-2xl font-semibold'>
+                                    Minimum System Requirements:
+                                    </h2>
                                 )}
-                            </div>
-                            <div className='pt-12 text-center'>
-                                <p className='text-2xl'>Want to learn more about {game.title}?</p>
                                 <div className='pt-10'>
-                                    <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-lg font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                    >
-                                    <a href={game.game_url}>Click Here</a>
-                                    </button>
+                                    {game.minimum_system_requirements && (
+                                        <ul className='text-lg pl-4 font-medium space-y-12'>
+                                            {game.minimum_system_requirements.os && (
+                                                <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
+                                            )}
+                                            {game.minimum_system_requirements.processor && (
+                                                <li>Processor: <span className='font-normal'>{game.minimum_system_requirements.processor}</span></li>
+                                            )}
+                                            {game.minimum_system_requirements.memory && (
+                                                <li>RAM: <span className='font-normal'>{game.minimum_system_requirements.memory}</span></li>
+                                            )}
+                                            {game.minimum_system_requirements.graphics && (
+                                                <li>Graphics Card: <span className='font-normal'>{game.minimum_system_requirements.graphics}</span></li>
+                                            )}
+                                            {game.minimum_system_requirements.storage && (
+                                                <li>Storage: <span className='font-normal'>{game.minimum_system_requirements.storage}</span></li>
+                                            )}
+                                        </ul>
+                                    )}
                                 </div>
-                                
-                            </div>   
+                                <div className='pt-12 text-center'>
+                                    <p className='text-2xl'>Want to learn more about {game.title}?</p>
+                                    <div className='pt-10'>
+                                        <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-lg font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        >
+                                        <a href={game.game_url}>Click Here</a>
+                                        </button>
+                                    </div>
+
+                                </div>   
+                            </div> 
                         </div>
                     </div>
                 </div>
