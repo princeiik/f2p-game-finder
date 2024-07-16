@@ -18,11 +18,11 @@ function Gamepage() {
                             <img className='' src={game.screenshots[0].image} alt="" />
                         </div>
                         <div className='w-full md:w-1/3'>
-                            <div className='p-4 bg-indigo-700 rounded-lg md:rounded-r-lg'>
+                            <div className=' flex flex-col p-4 gap-y-4 bg-indigo-700 rounded-lg md:rounded-r-lg'>
                                 <div className='text-xs md:text-2xl font-semibold italic text-center '>
                                     <p>"{game.short_description}"</p>
                                 </div>
-                                <div className='pl-3 pt-10'>
+                                <div className=''>
                                     <ul className='text-xs space-y-2 font-medium md:text-lg  md:space-y-8'>
                                         <li>Status: <span className='font-normal'>{game.status}</span></li>
                                         <li>Genre: <span className='font-normal'>{game.genre}</span></li>
@@ -56,16 +56,16 @@ function Gamepage() {
                             <img className='' src={game.screenshots[2].image} alt="" />
                         </div>
                         <div className='w-full md:w-1/3'>
-                            <div className=' h-full bg-pink-700 rounded-lg md:rounded-r-lg'>
-                                <div className='p-4 text-xs'>
+                            <div className='h-full bg-pink-700 rounded-lg md:rounded-r-lg'>
+                                <div className='flex flex-col p-4 text-xs gap-y-4'>
                                     {game.minimum_system_requirements && (
                                         <h2 className='text-center md:text-2xl font-semibold'>
                                         Minimum System Requirements:
                                         </h2>
                                     )}
-                                    <div className='pt-8'>
+                                    <div className=''>
                                         {game.minimum_system_requirements && (
-                                            <ul className='pl-4 font-medium space-y-8'>
+                                            <ul className='pl-4 font-medium space-y-4'>
                                                 {game.minimum_system_requirements.os && (
                                                     <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
                                                 )}
@@ -84,9 +84,9 @@ function Gamepage() {
                                             </ul>
                                         )}
                                     </div>
-                                    <div className='pt-12 text-center'>
+                                    <div className='flex flex-col pt-4 gap-y-4 text-center'>
                                         <p className='text-lg md:text-2xl'>Want to learn more about {game.title}?</p>
-                                        <div className='pt-5 md:pt-10'>
+                                        <div className='md:pt-10'>
                                             <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                             >
                                             <a href={game.game_url}>Click Here</a>
