@@ -18,12 +18,12 @@ function Gamepage() {
                             <img className='' src={game.screenshots[0].image} alt="" />
                         </div>
                         <div className='flex flex-col w-full md:w-1/3'>
-                            <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-[253px] md:rounded-tr-lg'>
-                                <div className='text-xs md:text-lg font-semibold italic text-center '>
+                            <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-[253px] md:rounded-tr-lg lg:h-[349px]'>
+                                <div className='text-xs font-semibold italic text-center pb-4 md:text-lg lg:text-xl'>
                                     <p>"{game.short_description}"</p>
                                 </div>
                                 <div className=''>
-                                    <ul className='text-xs space-y-2 font-medium md:text-base  md:space-y-4'>
+                                    <ul className='text-xs space-y-2 font-medium md:text-base md:space-y-4 lg:text-lg lg:space-y-6'>
                                         <li>Status: <span className='font-normal'>{game.status}</span></li>
                                         <li>Genre: <span className='font-normal'>{game.genre}</span></li>
                                         <li>Platform: <span className='font-normal'>{game.platform}</span></li>
@@ -38,8 +38,8 @@ function Gamepage() {
                     {/* row 2 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                         <div className='w-full md:w-1/3 '>
-                            <div className='h-96 overflow-y-auto bg-purple-700 rounded-lg md:h-[253px] md:rounded-none'>
-                                <div className='p-4 text-xs md:text-base'>
+                            <div className='h-96 overflow-y-auto bg-purple-700 rounded-lg md:h-[253px] md:rounded-none lg:h-[349px]'>
+                                <div className='p-4 text-xs md:text-base lg:text-lg'>
                                     <p className=''>{game.description}</p>
                                 </div>
                             </div>  
@@ -56,16 +56,16 @@ function Gamepage() {
                             <img className='' src={game.screenshots[2].image} alt="" />
                         </div>
                         <div className='w-full md:w-1/3'>
-                            <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-[253px] md:rounded-none md:rounded-br-lg'>
+                            <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-[253px] md:rounded-none md:rounded-br-lg lg:h-[349px]'>
                                 <div className='flex flex-col p-4 text-xs gap-y-4'>
                                     {game.minimum_system_requirements && (
-                                        <h2 className='text-center md:text-xl font-semibold'>
+                                        <h2 className='text-center font-semibold md:text-xl lg:pb-4 lg:text-2xl'>
                                         Minimum System Requirements:
                                         </h2>
                                     )}
                                     <div className=''>
                                         {game.minimum_system_requirements && (
-                                            <ul className='pl-4 font-medium space-y-4 md:text-base'>
+                                            <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8'>
                                                 {game.minimum_system_requirements.os && (
                                                     <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
                                                 )}
@@ -85,7 +85,7 @@ function Gamepage() {
                                         )}
                                     </div>
                                     <div className='flex flex-col pt-4 gap-y-4 text-center'>
-                                        <p className='text-lg md:font-semibold'>Want to learn more about {game.title}?</p>
+                                        <p className='text-lg md:font-semibold lg:text-xl'>Want to learn more about {game.title}?</p>
                                         <div className='md:pt-3'>
                                             <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                             >
