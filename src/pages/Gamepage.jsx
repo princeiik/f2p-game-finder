@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import Carousel from '../components/Carousel'
 
 function Gamepage() {
     const game = useLoaderData()            
@@ -10,13 +11,16 @@ function Gamepage() {
             <Navbar />
             <h1 className='text-center text-5xl font-semibold pt-6'>{game.title}</h1>
             <div className='p-10'>
+                <div className='pb-10'>
+                    <Carousel images={game.screenshots} />
+                </div>
                 <div className='flex flex-col gap-y-4'>
                     {/* row 1 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                         {/* Image 1 */}
-                        <div className='w-full md:w-2/3'>
+                        {/* <div className='w-full md:w-2/3'>
                             <img className='' src={game.screenshots[0].image} alt="" />
-                        </div>
+                        </div> */}
                         <div className='flex flex-col w-full md:w-1/3'>
                             <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-[253px] md:rounded-tr-lg lg:h-[349px] xl:h-[505px]'>
                                 <div className='text-xs font-semibold italic text-center pb-4 md:text-lg lg:text-xl xl:text-2xl'>
@@ -45,16 +49,16 @@ function Gamepage() {
                             </div>  
                         </div>
                         {/* Image 2 */}
-                        <div className='w-full md:w-2/3'>
+                        {/* <div className='w-full md:w-2/3'>
                             <img className='' src={game.screenshots[1].image} alt="" />
-                        </div> 
+                        </div>  */}
                     </div>
                     {/* row 3 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                         {/* Image 3 */}
-                        <div className='w-full md:w-2/3'>
+                        {/* <div className='w-full md:w-2/3'>
                             <img className='' src={game.screenshots[2].image} alt="" />
-                        </div>
+                        </div> */}
                         <div className='w-full md:w-1/3'>
                             <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-[253px] md:rounded-none md:rounded-br-lg lg:h-[349px] xl:h-[505px]'>
                                 <div className='flex flex-col p-4 text-xs gap-y-4'>
