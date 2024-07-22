@@ -16,13 +16,13 @@ function Gamepage() {
                 </div>
                 <div className='flex flex-col gap-y-4'>
                     {/* row 1 */}
-                    <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
+                    <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-6 md:h-[500px]'>
                         {/* Image 1 */}
                         {/* <div className='w-full md:w-2/3'>
                             <img className='' src={game.screenshots[0].image} alt="" />
                         </div> */}
-                        <div className='flex flex-col w-full md:w-1/3'>
-                            <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-[253px] md:rounded-tr-lg lg:h-[349px] xl:h-[505px]'>
+                        <div className='flex flex-col w-full md:w-1/2'>
+                            <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-full md:rounded-tl-lg '>
                                 <div className='text-xs font-semibold italic text-center pb-4 md:text-lg lg:text-xl xl:text-2xl'>
                                     <p>"{game.short_description}"</p>
                                 </div>
@@ -36,18 +36,18 @@ function Gamepage() {
                                         <li>Release Date: <span className='font-normal'>{game.release_date}</span></li>
                                     </ul>
                                 </div>  
+                            </div>
+                        </div>
+                        <div className='w-full md:w-1/2'>
+                            <div className='h-96 overflow-y-hidden hover:overflow-y-auto bg-purple-700 rounded-lg md:h-full md:rounded-none md:rounded-tr-lg'>
+                                <div className='p-4 text-xs md:text-base lg:text-lg'>
+                                    <p className='leading-relaxed'>{game.description}</p>
+                                </div>
                             </div>  
                         </div>
                     </div>
                     {/* row 2 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
-                        <div className='w-full md:w-1/3 '>
-                            <div className='h-96 overflow-y-auto bg-purple-700 rounded-lg md:h-[253px] md:rounded-none lg:h-[349px] xl:h-[505px]'>
-                                <div className='p-4 text-xs md:text-base lg:text-lg'>
-                                    <p className=''>{game.description}</p>
-                                </div>
-                            </div>  
-                        </div>
                         {/* Image 2 */}
                         {/* <div className='w-full md:w-2/3'>
                             <img className='' src={game.screenshots[1].image} alt="" />
@@ -59,8 +59,8 @@ function Gamepage() {
                         {/* <div className='w-full md:w-2/3'>
                             <img className='' src={game.screenshots[2].image} alt="" />
                         </div> */}
-                        <div className='w-full md:w-1/3'>
-                            <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-[253px] md:rounded-none md:rounded-br-lg lg:h-[349px] xl:h-[505px]'>
+                        <div className='w-full'>
+                            <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-full md:rounded-none md:rounded-b-lg'>
                                 <div className='flex flex-col p-4 text-xs gap-y-4'>
                                     {game.minimum_system_requirements && (
                                         <h2 className='text-center font-semibold md:text-xl lg:pb-4 lg:text-2xl '>
