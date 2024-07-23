@@ -20,7 +20,7 @@ function Carousel({ images }) {
             {images.map((image, index) => (
                 <SwiperSlide key={index}>
                     <div className='flex items-center justify-center'>
-                        <img className='block w-3/4' src={image.image} alt="" />
+                        <img className='block w-3/4 rounded-md' src={image.image} alt="" />
                     </div>
                 </SwiperSlide>
             ))}
