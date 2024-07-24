@@ -15,12 +15,7 @@ function Gamepage() {
                     <Carousel images={game.screenshots} />
                 </div>
                 <div className='flex flex-col gap-y-4'>
-                    {/* row 1 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-6 md:h-[500px]'>
-                        {/* Image 1 */}
-                        {/* <div className='w-full md:w-2/3'>
-                            <img className='' src={game.screenshots[0].image} alt="" />
-                        </div> */}
                         <div className='flex flex-col w-full md:w-1/2'>
                             <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-full md:rounded-l-lg '>
                                 <div className='text-xs font-semibold italic text-center pb-4 md:text-lg lg:text-xl xl:text-2xl'>
@@ -46,19 +41,9 @@ function Gamepage() {
                             </div>  
                         </div>
                     </div>
-                    {/* row 2 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
-                        {/* Image 2 */}
-                        {/* <div className='w-full md:w-2/3'>
-                            <img className='' src={game.screenshots[1].image} alt="" />
-                        </div>  */}
                     </div>
-                    {/* row 3 */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
-                        {/* Image 3 */}
-                        {/* <div className='w-full md:w-2/3'>
-                            <img className='' src={game.screenshots[2].image} alt="" />
-                        </div> */}
                         <div className='w-full md:px-48'>
                             <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-full md:rounded-none md:rounded-b-lg'>
                                 <div className='flex flex-col p-4 text-xs gap-y-4'>
