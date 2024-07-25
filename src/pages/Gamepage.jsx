@@ -44,7 +44,7 @@ function Gamepage() {
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                     </div>
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
-                        <div className='w-full md:px-48'>
+                        <div className='w-full md:px-28 lg:px-44'>
                             <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-full md:rounded-none md:rounded-b-lg'>
                                 <div className='flex flex-col p-4 text-xs gap-y-4'>
                                     {game.minimum_system_requirements && (
@@ -54,7 +54,7 @@ function Gamepage() {
                                     )}
                                     <div className=''>
                                         {game.minimum_system_requirements && (
-                                            <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8 lg:text-center'>
+                                            <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8'>
                                                 {game.minimum_system_requirements.os && (
                                                     <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
                                                 )}
