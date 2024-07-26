@@ -22,7 +22,7 @@ function Gamepage() {
                                     <p>"{game.short_description}"</p>
                                 </div>
                                 <div className=''>
-                                    <ul className='text-xs space-y-2 font-medium md:text-base md:space-y-4 lg:text-lg lg:space-y-6 lg:space-y-8'>
+                                    <ul className='text-xs space-y-2 font-medium md:text-base md:space-y-4 lg:text-lg lg:space-y-6 lg:space-y-8 xl:pl-6 xl:tracking-wide xl:text-2xl xl:space-y-6'>
                                         <li>Status: <span className='font-normal'>{game.status}</span></li>
                                         <li>Genre: <span className='font-normal'>{game.genre}</span></li>
                                         <li>Platform: <span className='font-normal'>{game.platform}</span></li>
@@ -35,7 +35,7 @@ function Gamepage() {
                         </div>
                         <div className='w-full md:w-1/2'>
                             <div className='h-96 overflow-y-hidden hover:overflow-y-auto bg-purple-700 rounded-lg md:h-full md:rounded-none md:rounded-r-lg'>
-                                <div className='p-4 text-xs md:text-base lg:text-lg'>
+                                <div className='p-4 text-xs md:text-base lg:text-lg xl:text-xl'>
                                     <p className='leading-relaxed'>{game.description}</p>
                                 </div>
                             </div>  
@@ -46,15 +46,15 @@ function Gamepage() {
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                         <div className='w-full md:px-28 lg:px-44'>
                             <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-full md:rounded-none md:rounded-b-lg'>
-                                <div className='flex flex-col p-4 text-xs gap-y-4'>
+                                <div className='flex flex-col p-4 text-xs gap-y-4 xl:p-6'>
                                     {game.minimum_system_requirements && (
-                                        <h2 className='text-center font-semibold md:text-xl lg:pb-4 lg:text-3xl'>
+                                        <h2 className='text-center font-semibold md:text-xl lg:pb-4 lg:text-3xl '>
                                         Minimum System Requirements:
                                         </h2>
                                     )}
                                     <div className=''>
                                         {game.minimum_system_requirements && (
-                                            <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8'>
+                                            <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8 xl:pl-8 xl:text-2xl xl:space-y-10 xl:tracking-wide'>
                                                 {game.minimum_system_requirements.os && (
                                                     <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
                                                 )}
@@ -74,9 +74,9 @@ function Gamepage() {
                                         )}
                                     </div>
                                     <div className='flex flex-col pt-4 gap-y-4 text-center'>
-                                        <p className='text-lg md:font-semibold lg:text-2xl'>Want to learn more about {game.title}?</p>
+                                        <p className='text-lg md:font-semibold lg:text-2xl xl:text-2xl'>Want to learn more about {game.title}?</p>
                                         <div className='md:pt-3'>
-                                            <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-sm xl:text-lg font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                             >
                                             <a href={game.game_url}>Click Here</a>
                                             </button>
