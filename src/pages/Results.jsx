@@ -7,7 +7,7 @@ function Results() {
     <div>
       <div className='max-h-full bg-violet-950'>
         <Navbar />
-        <h1 className='flex flex-row justify-center py-7 text-4xl text-slate-100'>
+        <h1 className='flex flex-row text-center py-7 text-4xl text-slate-100 md:justify-center'>
           Check out these Free-to-play games!
         </h1>
         <GameList />
