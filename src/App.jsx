@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage'
 import Results from './pages/Results'
 import Gamepage, { gameLoader } from './pages/Gamepage'
 
+//Routes for pages
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
