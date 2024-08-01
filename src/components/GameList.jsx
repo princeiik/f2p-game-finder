@@ -1,33 +1,36 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation, Link } from 'react-router-dom'
+import useFetchGames from '../hooks/useFetchGames'
 
 function GameList() {
-  const location = useLocation()
-  const { genre, platform } = location.state
-  const [games, setGames] = useState([])
+  const { games } = useFetchGames()
 
-  useEffect(() => {
-    async function fetchGames() {
-      let url = "/api/games"
+  // const location = useLocation()
+  // const { genre, platform } = location.state
+  // const [games, setGames] = useState([])
+
+  // useEffect(() => {
+  //   async function fetchGames() {
+  //     let url = "/api/games"
       
-      if(genre || platform) {
-        url += "?"
-        if (genre) url += `category=${genre}&`
-        if (platform) url += `platform=${platform}`
-        url = url.replace(/[&?]$/, '')
-      }
+  //     if(genre || platform) {
+  //       url += "?"
+  //       if (genre) url += `category=${genre}&`
+  //       if (platform) url += `platform=${platform}`
+  //       url = url.replace(/[&?]$/, '')
+  //     }
 
-      try {
-        const res = await fetch(url)
-        const data = await res.json()
-        setGames(data)
-      } catch (err) {
-        console.log("Error fetching data", err);
-      }
-    }
+  //     try {
+  //       const res = await fetch(url)
+  //       const data = await res.json()
+  //       setGames(data)
+  //     } catch (err) {
+  //       console.log("Error fetching data", err);
+  //     }
+  //   }
 
-    fetchGames()
-  }, [genre, platform])
+  //   fetchGames()
+  // }, [genre, platform])
 
   return (
     <div>
