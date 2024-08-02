@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar'
 
 function Results() {
   return (
-    <div>
-      <div className='max-h-full bg-violet-950'>
+    <div className='h-screen bg-violet-950'>
+      <div>
         <Navbar />
         <div className='text-center'>
           <h1 className='py-7 text-4xl text-slate-100'>

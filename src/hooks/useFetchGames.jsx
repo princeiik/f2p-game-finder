@@ -10,13 +10,15 @@ function useFetchGames() {
       async function fetchGames() {
         let url = "/api/games"
         
+        //Create URL from dropdown selection
         if(genre || platform) {
           url += "?"
           if (genre) url += `category=${genre}&`
           if (platform) url += `platform=${platform}`
           url = url.replace(/[&?]$/, '')
         }
-
+        
+        //Fetch information based on URL 
         try {
           const res = await fetch(url)
           const data = await res.json()
