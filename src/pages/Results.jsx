@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 
 function Results() {
   return (
-    <div className='h-screen bg-violet-950'>
+    <div className='h-full bg-violet-950'>
       <div>
         <Navbar />
         <div className='text-center'>
