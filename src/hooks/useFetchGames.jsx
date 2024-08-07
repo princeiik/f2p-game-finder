@@ -5,6 +5,8 @@ function useFetchGames() {
     const location = useLocation()
     const { genre, platform } = location.state
     const [games, setGames] = useState([])
+    const [currentPage, setCurrentPage] = useState(1)
+    const [gamesPerPage, setGamesPerPage] = useState(8)
 
     useEffect(() => {
       async function fetchGames() {
@@ -30,8 +32,18 @@ function useFetchGames() {
 
       fetchGames()
     }, [genre, platform])
+
+    const indexOfLastGame = currentPage * gamesPerPage
+    const indexOfFirstGame = indexOfLastGame - gamesPerPage
+    const currentGames = games.slice(indexOfFirstGame, indexOfLastGame)
+
+    const totalPages = Math.ceil(games.length/gamesPerPage)
     
-    return { games }
+    function changePage(newPage) {
+      setCurrentPage(newPage)
+    }
+    
+    return { games: currentGames, currentPage, totalPages, changePage }
 }
 
 export default useFetchGames
