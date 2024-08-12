@@ -7,7 +7,7 @@ function Gamepage() {
     const game = useLoaderData()            
     
     return (
-        <div className='max-h-full text-slate-100 bg-indigo-950'>
+        <div className='max-h-full text-slate-100 bg-violet-950'>
             <Navbar />
             <h1 className='text-center text-5xl font-semibold pt-6'>{game.title}</h1>
             <div className='p-10'>
@@ -76,7 +76,7 @@ function Gamepage() {
                                     <div className='flex flex-col pt-4 gap-y-4 text-center'>
                                         <p className='text-lg md:font-semibold lg:text-2xl xl:text-2xl'>Want to learn more about {game.title}?</p>
                                         <div className='md:pt-3'>
-                                            <button className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-sm xl:text-lg font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            <button className="select-none rounded-lg bg-purple-600 py-3 px-6 text-center align-middle font-sans text-sm xl:text-lg font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                             >
                                             <a href={game.game_url}>Click Here</a>
                                             </button>
