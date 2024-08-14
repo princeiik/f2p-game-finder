@@ -43,7 +43,7 @@ function useFetchGames() {
       setCurrentPage(newPage)
     }
     
-    return { games: currentGames, currentPage, totalPages, changePage }
+    return { games, currentGames, currentPage, totalPages, changePage }
 }
 
 export default useFetchGames

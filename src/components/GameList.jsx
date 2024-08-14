@@ -5,7 +5,7 @@ import GameCard from './GameCard'
 import Pagination from './Pagination'
 
 function GameList() {
-  const { games, currentPage, totalPages, changePage} = useFetchGames()
+  const { games, currentGames, currentPage, totalPages, changePage} = useFetchGames()
 
   function handleNextPage() {
     if(currentPage < totalPages) {
@@ -30,9 +30,9 @@ function GameList() {
         />
       </div>
       <div className='py-2'>
-        {games.length > 0 ? (
+        {currentGames.length > 0 ? (
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-y-12 pt-8 '>
-            {games.map((game, index) => (
+            {currentGames.map((game, index) => (
               <GameCard
                 key={index}
                 id={game.id}
