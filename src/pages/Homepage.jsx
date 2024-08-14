@@ -15,7 +15,7 @@ function Homepage() {
           <Form />
         </div>  
         <div>
-          {/* <RandomGame /> */}
+          <RandomGame />
         </div>
       </div>
     </>

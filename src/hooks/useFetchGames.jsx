@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 function useFetchGames() {
     const location = useLocation()
-    const { genre, platform } = location.state
+    const { genre, platform } = location.state || {}
     const [games, setGames] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
     const [gamesPerPage, setGamesPerPage] = useState(8)
