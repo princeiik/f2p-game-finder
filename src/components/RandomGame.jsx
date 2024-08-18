@@ -10,7 +10,7 @@ function RandomGame() {
 
     function randomGame() {
         console.log(games[randomizeGame].id);
-        return navigate(`/results/${games[randomGame].id}`)
+        return navigate(`/results/${games[randomizeGame].id}`)
     }
 
     return (
