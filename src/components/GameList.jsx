@@ -4,7 +4,7 @@ import GameCard from './GameCard'
 import Pagination from './Pagination'
 
 function GameList() {
-  const { games, currentGames, currentPage, totalPages, changePage} = useFetchGames()
+  const { currentGames, currentPage, totalPages, changePage} = useFetchGames()
 
   function handleNextPage() {
     if(currentPage < totalPages) {
