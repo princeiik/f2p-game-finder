@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import useFetchGames from '../hooks/useFetchGames'
 import GameCard from './GameCard'
 import Pagination from './Pagination'
