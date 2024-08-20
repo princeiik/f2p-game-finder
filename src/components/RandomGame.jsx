@@ -6,10 +6,12 @@ function RandomGame() {
     const { games } = useFetchGames()
     const navigate = useNavigate()
 
+    //Picks a random game from the games array from the API
     let randomizeGame = Math.floor(Math.random() * games.length) 
-
+    
+    //function that navigates to a random Game id
     function randomGame() {
-        console.log(games[randomizeGame].id);
+        // console.log(games[randomizeGame].id);
         return navigate(`/results/${games[randomizeGame].id}`)
     }
 
