@@ -24,6 +24,7 @@ function Navbar() {
             </button>
           </div>
         </div>
+        {/* Hamburger menu at on medium screen */}
         <div className="mobile-menu hidden md:hidden">
           <ul className="mt-4 space-y-4">
             <li><a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">Home</a></li>
