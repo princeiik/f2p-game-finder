@@ -20,6 +20,7 @@ function GameList() {
 
   return (
     <>
+      {/* Pagination menu */}
       <div>
         <Pagination 
         previousPage={handlePreviousPage}
@@ -28,6 +29,7 @@ function GameList() {
         totalPages={totalPages}
         />
       </div>
+      {/* List of games */}
       <div className='py-2'>
         {currentGames.length > 0 ? (
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-y-12 pt-8 '>
