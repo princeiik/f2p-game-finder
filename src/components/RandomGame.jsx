@@ -18,7 +18,7 @@ function RandomGame() {
     return (
         <div>
             <div>
-                <h1 className='text-white text-sm text-center font-medium leading-6 text-slate-100'>Click to find random free-to-play game</h1>
+                <h1 className='text-white text-sm text-center font-medium leading-6 text-slate-100'>Pick a game for me!</h1>
             </div>
             <div className="p-6 pt-4">
                 <button 
