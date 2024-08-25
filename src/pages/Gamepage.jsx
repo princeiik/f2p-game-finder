@@ -7,7 +7,7 @@ function Gamepage() {
     const game = useLoaderData()            
     
     return (
-        <div className='max-h-full text-slate-100 bg-violet-950'>
+        <div className='max-h-full text-slate-100 bg-slate-900'>
             <Navbar />
             <h1 className='text-center text-5xl font-semibold pt-6'>{game.title}</h1>
             <div className='p-10'>
