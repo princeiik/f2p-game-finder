@@ -78,25 +78,57 @@ function Gamepage() {
                                         Minimum System Requirements:
                                         </h2>
                                     )}
-                                    <div className=''>
+                                    <div className='text-xs md:text-base lg:text-lg 2xl:text-2xl'>
                                         {game.minimum_system_requirements && (
-                                            <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8 xl:pl-8 xl:text-2xl xl:space-y-10 xl:tracking-wide xl:text-center'>
+                                            <div className='grid grid-cols-1 divide-y'>
                                                 {game.minimum_system_requirements.os && (
-                                                    <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
+                                                <div className='grid grid-cols-2 py-2 md:py-3'>
+                                                    <div className='font-medium'>OS:</div>
+                                                    <div className='justify-self-end'>{game.minimum_system_requirements.os}</div>
+                                                </div>
                                                 )}
                                                 {game.minimum_system_requirements.processor && (
-                                                    <li>Processor: <span className='font-normal'>{game.minimum_system_requirements.processor}</span></li>
+                                                <div className='grid grid-cols-2 py-2 md:py-3'>
+                                                    <div className='font-medium'>Processor:</div>
+                                                    <div className='justify-self-end'>{game.minimum_system_requirements.processor}</div> 
+                                                </div>
                                                 )}
                                                 {game.minimum_system_requirements.memory && (
-                                                    <li>RAM: <span className='font-normal'>{game.minimum_system_requirements.memory}</span></li>
+                                                <div className='grid grid-cols-2 py-2 md:py-3'>
+                                                   <div className='font-medium'>RAM:</div>
+                                                    <div className='justify-self-end'>{game.minimum_system_requirements.memory}</div> 
+                                                </div>
                                                 )}
                                                 {game.minimum_system_requirements.graphics && (
-                                                    <li>Graphics Card: <span className='font-normal'>{game.minimum_system_requirements.graphics}</span></li>
+                                                <div className='grid grid-cols-2 py-2 md:py-3'>
+                                                   <div className='font-medium'>Graphics Card:</div>
+                                                    <div className='justify-self-end'>{game.minimum_system_requirements.graphics}</div> 
+                                                </div>
                                                 )}
                                                 {game.minimum_system_requirements.storage && (
-                                                    <li>Storage: <span className='font-normal'>{game.minimum_system_requirements.storage}</span></li>
+                                                <div className='grid grid-cols-2 py-2 md:py-3'>
+                                                    <div className='font-medium'>Storage:</div>
+                                                    <div className='justify-self-end'>{game.minimum_system_requirements.storage}</div>
+                                                </div>
                                                 )}
-                                            </ul>
+                                            </div>
+                                            // <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8 xl:pl-8 xl:text-2xl xl:space-y-10 xl:tracking-wide xl:text-center'>
+                                            //     {game.minimum_system_requirements.os && (
+                                            //         <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
+                                            //     )}
+                                            //     {game.minimum_system_requirements.processor && (
+                                            //         <li>Processor: <span className='font-normal'>{game.minimum_system_requirements.processor}</span></li>
+                                            //     )}
+                                            //     {game.minimum_system_requirements.memory && (
+                                            //         <li>RAM: <span className='font-normal'>{game.minimum_system_requirements.memory}</span></li>
+                                            //     )}
+                                            //     {game.minimum_system_requirements.graphics && (
+                                            //         <li>Graphics Card: <span className='font-normal'>{game.minimum_system_requirements.graphics}</span></li>
+                                            //     )}
+                                            //     {game.minimum_system_requirements.storage && (
+                                            //         <li>Storage: <span className='font-normal'>{game.minimum_system_requirements.storage}</span></li>
+                                            //     )}
+                                            // </ul>
                                         )}
                                     </div>
                                     <div className='flex flex-col pt-4 gap-y-4 text-center'>
