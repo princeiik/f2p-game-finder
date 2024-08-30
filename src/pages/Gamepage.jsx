@@ -48,14 +48,6 @@ function Gamepage() {
                                             <div className='justify-self-end'>{game.release_date}</div>
                                         </div>
                                     </div>
-                                    {/* <ul className='text-xs space-y-2 font-medium md:text-base md:space-y-4 lg:text-lg lg:space-y-6 lg:space-y-8 xl:pl-6 xl:tracking-wide xl:text-2xl xl:space-y-6'>
-                                        <li>Status: <span className='font-normal'>{game.status}</span></li>
-                                        <li>Genre: <span className='font-normal'>{game.genre}</span></li>
-                                        <li>Platform: <span className='font-normal'>{game.platform}</span></li>
-                                        <li>Publisher: <span className='font-normal'>{game.publisher}</span></li>
-                                        <li>Developer: <span className='font-normal'>{game.developer}</span></li>
-                                        <li>Release Date: <span className='font-normal'>{game.release_date}</span></li>
-                                    </ul> */}
                                 </div>  
                             </div>
                         </div>
