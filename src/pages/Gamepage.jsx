@@ -104,23 +104,6 @@ function Gamepage() {
                                                 </div>
                                                 )}
                                             </div>
-                                            // <ul className='pl-4 font-medium space-y-4 md:text-base lg:text-lg lg:space-y-8 xl:pl-8 xl:text-2xl xl:space-y-10 xl:tracking-wide xl:text-center'>
-                                            //     {game.minimum_system_requirements.os && (
-                                            //         <li>OS: <span className='font-normal'>{game.minimum_system_requirements.os}</span></li>
-                                            //     )}
-                                            //     {game.minimum_system_requirements.processor && (
-                                            //         <li>Processor: <span className='font-normal'>{game.minimum_system_requirements.processor}</span></li>
-                                            //     )}
-                                            //     {game.minimum_system_requirements.memory && (
-                                            //         <li>RAM: <span className='font-normal'>{game.minimum_system_requirements.memory}</span></li>
-                                            //     )}
-                                            //     {game.minimum_system_requirements.graphics && (
-                                            //         <li>Graphics Card: <span className='font-normal'>{game.minimum_system_requirements.graphics}</span></li>
-                                            //     )}
-                                            //     {game.minimum_system_requirements.storage && (
-                                            //         <li>Storage: <span className='font-normal'>{game.minimum_system_requirements.storage}</span></li>
-                                            //     )}
-                                            // </ul>
                                         )}
                                     </div>
                                     <div className='flex flex-col pt-4 gap-y-4 text-center'>
