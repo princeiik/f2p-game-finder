@@ -15,6 +15,7 @@ function Gamepage() {
                     <Carousel images={game.screenshots} />
                 </div>
                 <div className='flex flex-col gap-y-4'>
+                    {/* Game Description Section */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-6 md:h-[500px]'>
                         <div className='flex flex-col w-full md:w-1/2'>
                             <div className=' p-4 gap-y-4 bg-indigo-700 rounded-lg overflow-y-auto md:rounded-none md:h-full md:rounded-l-lg '>
@@ -51,6 +52,7 @@ function Gamepage() {
                                 </div>  
                             </div>
                         </div>
+                        {/* Description Section */}
                         <div className='w-full md:w-1/2'>
                             <div className='h-96 overflow-y-hidden hover:overflow-y-auto bg-purple-700 rounded-lg md:h-full md:rounded-none md:rounded-r-lg'>
                                 <div className='p-4 text-xs md:text-base lg:text-lg xl:text-xl'>
@@ -61,6 +63,7 @@ function Gamepage() {
                     </div>
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                     </div>
+                    {/* System Requirements Section */}
                     <div className='flex flex-col gap-y-4 md:flex-row md:gap-x-4'>
                         <div className='w-full md:px-28 lg:px-44 xl:px-72'>
                             <div className='h-full bg-pink-700 rounded-lg overflow-y-auto md:h-full md:rounded-none md:rounded-b-lg'>
