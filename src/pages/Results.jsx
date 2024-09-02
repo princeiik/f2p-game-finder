@@ -12,6 +12,7 @@ function Results() {
             Check out these Free-to-play games!
           </h1>
         </div>
+        {/* List of games from results */}
         <div>
           <GameList />
         </div>
