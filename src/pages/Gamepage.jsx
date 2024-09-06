@@ -2,6 +2,7 @@ import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Carousel from '../components/Carousel'
+import { BsCircleFill } from "react-icons/bs";
 
 function Gamepage() {
     const game = useLoaderData()            
@@ -26,7 +27,10 @@ function Gamepage() {
                                     <div className='grid grid-cols-1 divide-y'>
                                         <div className='grid grid-cols-2 py-2 md:py-3'>
                                             <div className='font-medium'>Status:</div>
-                                            <div className='justify-self-end'>{game.status}</div>
+                                            <div className='justify-self-end flex item-center'>
+                                                <span className='text-green-500 my-1 px-2 '><BsCircleFill /></span>
+                                                {game.status}
+                                            </div>
                                         </div>
                                         <div className='grid grid-cols-2 py-2 md:py-3'>
                                             <div className='font-medium'>Genre</div>
