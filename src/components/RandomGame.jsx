@@ -11,7 +11,6 @@ function RandomGame() {
     
     //function that navigates to a random Game id
     function randomGame() {
-        // console.log(games[randomizeGame].id);
         return navigate(`/results/${games[randomizeGame].id}`)
     }
 
