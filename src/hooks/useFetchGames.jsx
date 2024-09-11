@@ -10,7 +10,7 @@ function useFetchGames() {
 
     useEffect(() => {
       async function fetchGames() {
-        let url = "/api/games"
+        let url = "https://www.freetogame.com/api/games"
         
         //Create URL from dropdown selection
         if(genre || platform) {
