@@ -7,7 +7,7 @@ function Navbar() {
         <div className="flex items-center justify-between">
           {/* Website Title */}
           <div className="text-white font-bold text-xl drop-shadow-lg">
-            <a href="/">Free 2 Play Game Finder</a>
+            <a href="/">F2P Hunt</a>
           </div>
           <div className="hidden md:block">
             <ul className="flex items-center space-x-8">
