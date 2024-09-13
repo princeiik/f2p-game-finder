@@ -9,7 +9,7 @@ function RandomGame() {
     //Picks a random game from the games array from the API
     let randomizeGame = Math.floor(Math.random() * games.length) 
     
-    //function that navigates to a random Game id
+    //function that navigates user to a random Game Id
     function randomGame() {
         return navigate(`/results/${games[randomizeGame].id}`)
     }
