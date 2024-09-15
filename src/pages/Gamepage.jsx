@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel'
 import { BsCircleFill } from "react-icons/bs";
 
 function Gamepage() {
-    const game = useLoaderData()            
+    const game = useLoaderData()        
     
     return (
         <div className='max-h-full text-slate-100 bg-slate-900'>
@@ -133,10 +133,28 @@ function Gamepage() {
 }
 
 async function gameLoader({ params }) {
-    const { id } = params
-    const res = await fetch(`api/game?id=${id}`)
-    const data = await res.json()
-    return data
+    const { id } = params;
+    const apiKey = import.meta.env.VITE_RAPIDAPI_KEY;
+
+    try {
+        const res = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`, {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
+                'X-RapidAPI-Key': apiKey // Ensure this is set correctly
+            }
+        });
+        
+        if (!res.ok) {
+            throw new Error(`Error: ${res.status} ${res.statusText}`);
+        }
+        
+        const data = await res.json();
+        return data;
+    } catch (error) {
+        console.error("Error fetching game data", error);
+        throw error; // Optionally, rethrow the error to handle it in your component
+    }
 }
 
 export { Gamepage as default, gameLoader }

@@ -10,7 +10,9 @@ function useFetchGames() {
 
     useEffect(() => {
       async function fetchGames() {
-        let url = "/api/games"
+        let url = "https://free-to-play-games-database.p.rapidapi.com/api/games"
+
+        const apiKey = import.meta.env.VITE_RAPIDAPI_KEY;
         
         //Create URL from dropdown selection
         if(genre || platform) {
@@ -22,12 +24,18 @@ function useFetchGames() {
         
         //Fetch information based on URL 
         try {
-          const res = await fetch(url)
+          const res = await fetch(url, {
+              method: 'GET',
+              headers: {
+                  'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
+                  'X-RapidAPI-Key': apiKey // Use environment variable
+              }
+          })
           const data = await res.json()
           setGames(data)
-        } catch (err) {
+      } catch (err) {
           console.log("Error fetching data", err);
-        }
+      }
       }
 
       fetchGames()
