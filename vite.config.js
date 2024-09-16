@@ -21,7 +21,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/rapidapi/, ''),
         headers: {
           'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
-          'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY // Ensure Vite can access this environment variable
+          'X-RapidAPI-Key': process.env.VITE_RAPIDAPI_KEY // Ensure Vite can access this environment variable
         }
       },
     },
