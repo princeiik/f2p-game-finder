@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/',
+  build: {
+    outDir: 'dist',
+  },
   server: {
     proxy: {
       '/api': {
@@ -20,7 +21,7 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/rapidapi/, ''),
         headers: {
           'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
-          'X-RapidAPI-Key': process.env.VITE_RAPIDAPI_KEY // Ensure Vite can access this environment variable
+          'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY // Ensure Vite can access this environment variable
         }
       },
     },
