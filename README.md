@@ -13,7 +13,7 @@ For the front-end, I integrated the FreeToGame API to fetch video game data and 
 
 ## Lessons Learned:
 
-This was a project I created while learning React and Tailwind CSS so it took some time to figure out how I was going to layout everything but having knownledge in HTML, CSS and JavaScript definitely made it quicker of course. By the end of the project, while I still have more to learn it definitely helped me understand the foundations of React. It also deepending my knowledge of working and manupulating information with APIs as well
+This was a project I created while learning React and Tailwind CSS, so it took some time to figure out how to lay out everything. However, having knowledge of HTML, CSS, and JavaScript definitely made the process quicker. By the end of the project, while I still have more to learn, it definitely helped me understand the foundations of React. It also deepened my knowledge of working with and manipulating information from APIs as well.
 
 # How to run the application locally
 
