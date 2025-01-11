@@ -9,7 +9,7 @@ F2PHunt is a web application I built where users can discover free-to-play games
 
 Frontend: 
 
-For the front-end, I integrated the FreeToGame API to fetch video game data and developed a form with dropdown options that allow users to filter games by genre and platform. After users make their selection, it dynamically generate a URL to filter game titles accordingly, ensuring that they only see the games relevant to their choices. Additionally, I created individual game pages that display detailed information about each game. I also implemented responsive design using Tailwind CSS, making sure the site works smoothly on small, medium, and large screens.
+For the front end, I integrated the FreeToGame API to fetch video game data and developed a form with dropdown options that allow users to filter games by genre and platform. After users make their selection, it dynamically generates a URL to filter game titles accordingly, ensuring they only see games relevant to their choices. Additionally, I created individual game pages that display detailed information about each game. I also implemented responsive design using Tailwind CSS, ensuring the site works smoothly on small, medium, and large screens.
 
 ## Lessons Learned:
 
