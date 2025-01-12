@@ -1,5 +1,5 @@
 # F2P Hunt
-F2PHunt is a web application I built where users can discover free-to-play games based on their choice. The app is fully responsive, ensuring an optimized experience across different screen sizes.
+F2PHunt is a web application I built that allows users to discover free-to-play games based on their preferences. The app is fully responsive, providing an optimized experience across various screen sizes.
 
 **Link to project:** https://f2phunt.onrender.com/
 
