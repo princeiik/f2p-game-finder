@@ -2,6 +2,7 @@ import React from 'react'
 import Form from '../components/Form'
 import Navbar from '../components/Navbar'
 import RandomGame from '../components/RandomGame'
+import Footer from '../components/Footer'
 
 function Homepage() {
   return (
@@ -25,6 +26,9 @@ function Homepage() {
         <div className='text-center pt-8'>
           <RandomGame />
         </div>
+        <footer>
+            <Footer />
+        </footer>
       </div>
     </>
   )
