@@ -7,10 +7,10 @@ import Footer from '../components/Footer'
 function Homepage() {
   return (
     <div className='min-h-screen flex flex-col'>
-      <header className=''>
+      <header className='z-10'>
         <Navbar />
       </header>
-      <main className="flex-grow bg-indigo-950">
+      <main className="flex-grow bg-slate-900">
         <div className='text-center pt-6'>
           <h1 className="text-2xl md:text-4xl font-bold text-slate-100 shadow-white"> Search Free-to-Play Games </h1>
         </div>
