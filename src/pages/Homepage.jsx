@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 function Homepage() {
   return (
     <div className='min-h-screen flex flex-col'>
+      {/* Navbar */}
       <header className='z-10'>
         <Navbar />
       </header>
@@ -14,6 +15,7 @@ function Homepage() {
         <div className='text-center pt-6'>
           <h1 className="text-2xl md:text-4xl font-bold text-slate-100 shadow-white"> Search Free-to-Play Games </h1>
         </div>
+        {/* F2P SORTER FORM */}
         <div>
           <Form />
         </div>
@@ -25,10 +27,12 @@ function Homepage() {
         <div className='text-center pt-6'>
           <h1 className="text-4xl font-bold text-slate-100 shadow-white"> Search a Random Free-to-Play Game</h1>
         </div>
+        {/* F2P RANDOMIZER FORM */}
         <div className='text-center pt-8'>
           <RandomGame />
         </div>
       </main>
+      {/* FOOTER */}
       <footer className=''>
         <Footer />
       </footer>
