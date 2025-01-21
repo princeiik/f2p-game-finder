@@ -7,15 +7,15 @@ import Footer from '../components/Footer'
 function Homepage() {
   return (
     <div className='min-h-screen flex flex-col'>
-      {/* Navbar */}
-      <header className='z-10'>
+      {/* Navbar SECTION */}
+      <header className='z-10 hover:shadow-lg hover:shadow-purple-500/40'>
         <Navbar />
       </header>
       <main className="flex-grow bg-slate-900">
         <div className='text-center pt-6'>
           <h1 className="text-2xl md:text-4xl font-bold text-slate-100 shadow-white"> Search Free-to-Play Games </h1>
         </div>
-        {/* F2P SORTER FORM */}
+        {/* F2P SORTER FORM SECTION */}
         <div>
           <Form />
         </div>
@@ -27,12 +27,12 @@ function Homepage() {
         <div className='text-center pt-6'>
           <h1 className="text-4xl font-bold text-slate-100 shadow-white"> Search a Random Free-to-Play Game</h1>
         </div>
-        {/* F2P RANDOMIZER FORM */}
+        {/* F2P RANDOMIZER FORM SECTION */}
         <div className='text-center pt-8'>
           <RandomGame />
         </div>
       </main>
-      {/* FOOTER */}
+      {/* FOOTER SECTION */}
       <footer className=''>
         <Footer />
       </footer>
